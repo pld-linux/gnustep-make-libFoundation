@@ -45,7 +45,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains the basic tools needed to run GNUstep
 applications.
 
-This version of gnustep-make is compiled for support with libFoundation.
+This version of gnustep-make is compiled for support with
+libFoundation.
 
 %description -l pl
 Ten pakiet zawiera podstawowe narzêdzia potrzebne do uruchamiania
@@ -67,7 +68,8 @@ issues associated with the configuration and installation of the core
 GNUstep libraries. It also allows the user to easily create
 cross-compiled binaries.
 
-This version of gnustep-make is compiled for support with libFoundation.
+This version of gnustep-make is compiled for support with
+libFoundation.
 
 %description devel -l pl
 Pakiet makefile jest prost±, wydajn± i rozszerzaln± metod± pisania
