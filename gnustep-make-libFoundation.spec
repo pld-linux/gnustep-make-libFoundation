@@ -10,7 +10,7 @@
 %define		_realname	gnustep-make
 
 Summary:	GNUstep Makefile package libFoundation version
-Summary(pl):	Pakiet GNUstep Makefile wersja libFoundation
+Summary(pl.UTF-8):   Pakiet GNUstep Makefile wersja libFoundation
 Name:		gnustep-make-libFoundation
 Version:	1.11.0
 Release:	0.1
@@ -48,15 +48,15 @@ applications.
 This version of gnustep-make is compiled for support with
 libFoundation.
 
-%description -l pl
-Ten pakiet zawiera podstawowe narzêdzia potrzebne do uruchamiania
+%description -l pl.UTF-8
+Ten pakiet zawiera podstawowe narzÄ™dzia potrzebne do uruchamiania
 aplikacji GNUstep.
 
 Ta wersja gnustep-make'a jest skompilowana dla wsparcia libFoundation.
 
 %package devel
 Summary:	Files needed to develop applications with gnustep-make libFoundation version
-Summary(pl):	Pliki potrzebne do tworzenia aplikacji przy u¿yciu gnustep-make wersja libFoundation
+Summary(pl.UTF-8):   Pliki potrzebne do tworzenia aplikacji przy uÅ¼yciu gnustep-make wersja libFoundation
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
@@ -71,12 +71,12 @@ cross-compiled binaries.
 This version of gnustep-make is compiled for support with
 libFoundation.
 
-%description devel -l pl
-Pakiet makefile jest prost±, wydajn± i rozszerzaln± metod± pisania
-makefile'i do projektów opartych o GNUstep. Pozwala u¿ytkownikowi na
-tworzenie projektów z pominiêciem skomplikowanych szczegó³ów
+%description devel -l pl.UTF-8
+Pakiet makefile jest prostÄ…, wydajnÄ… i rozszerzalnÄ… metodÄ… pisania
+makefile'i do projektÃ³w opartych o GNUstep. Pozwala uÅ¼ytkownikowi na
+tworzenie projektÃ³w z pominiÄ™ciem skomplikowanych szczegÃ³Å‚Ã³w
 konfiguracji i instalacji podstawowych bibliotek GNUstep. Pozwala
-tak¿e ³atwo tworzyæ kompilowane skro¶nie binaria.
+takÅ¼e Å‚atwo tworzyÄ‡ kompilowane skroÅ›nie binaria.
 
 Ta wersja gnustep-make'a jest skompilowana dla wsparcia libFoundation.
 
