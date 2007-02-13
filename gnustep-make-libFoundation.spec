@@ -10,7 +10,7 @@
 %define		_realname	gnustep-make
 
 Summary:	GNUstep Makefile package libFoundation version
-Summary(pl.UTF-8):   Pakiet GNUstep Makefile wersja libFoundation
+Summary(pl.UTF-8):	Pakiet GNUstep Makefile wersja libFoundation
 Name:		gnustep-make-libFoundation
 Version:	1.11.0
 Release:	0.1
@@ -56,7 +56,7 @@ Ta wersja gnustep-make'a jest skompilowana dla wsparcia libFoundation.
 
 %package devel
 Summary:	Files needed to develop applications with gnustep-make libFoundation version
-Summary(pl.UTF-8):   Pliki potrzebne do tworzenia aplikacji przy użyciu gnustep-make wersja libFoundation
+Summary(pl.UTF-8):	Pliki potrzebne do tworzenia aplikacji przy użyciu gnustep-make wersja libFoundation
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
