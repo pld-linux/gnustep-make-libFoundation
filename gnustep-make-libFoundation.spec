@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	docs	# don't build documentation (for bootstrap)
+%bcond_without	doc	# don't build documentation (for bootstrap)
 #
 # TODO:
 # - check spelling, typo & rel 1
@@ -15,14 +15,13 @@ Name:		gnustep-make-libFoundation
 Version:	1.11.0
 Release:	0.1
 License:	GPL
-Vendor:		The GNUstep Project
 Group:		Applications/System
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/core/%{_realname}-%{version}.tar.gz
 # Source0-md5:	91f7e64e0531d56571ae93f6fdf14f58
 URL:		http://www.gnustep.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-%{?with_docs:BuildRequires: gnustep-make-devel}
+%{?with_doc:BuildRequires: gnustep-make-devel}
 BuildRequires:	tetex
 BuildRequires:	tetex-dvips
 BuildRequires:	tetex-format-latex
@@ -93,7 +92,7 @@ cp -f /usr/share/automake/config.* .
 
 %{__make}
 
-%if %{with docs}
+%if %{with doc}
 %{__make} -C Documentation
 %endif
 
@@ -105,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 #libFoundation + friends won't build without that
 ln -s Library/Makefiles $RPM_BUILD_ROOT%{_prefix}/System/Makefiles
 
-%if %{with docs}
+%if %{with doc}
 %{__make} -C Documentation install \
 	GNUSTEP_INSTALLATION_DIR=$RPM_BUILD_ROOT%{_prefix}/System
 %endif
@@ -174,7 +173,7 @@ fi
 %{_prefix}/System/Library/ColorPickers
 %{_prefix}/System/Library/Colors
 %{_prefix}/System/Library/DocTemplates
-%if %{with docs}
+%if %{with doc}
 %docdir %{_prefix}/System/Library/Documentation
 %dir %{_prefix}/System/Library/Documentation
 %endif
@@ -189,7 +188,7 @@ fi
 %{_prefix}/System/Library/Services
 %{_prefix}/System/Library/Sounds
 
-%if %{with docs}
+%if %{with doc}
 %dir %{_prefix}/System/Library/Documentation/Developer
 %dir %{_prefix}/System/Library/Documentation/Developer/Make
 %{_prefix}/System/Library/Documentation/Developer/Make/ReleaseNotes
@@ -215,7 +214,7 @@ fi
 
 %files devel
 %defattr(644,root,root,755)
-%if %{with docs}
+%if %{with doc}
 %docdir %{_prefix}/System/Library/Documentation
 %{_prefix}/System/Library/Documentation/Developer/Make/Manual
 %endif
